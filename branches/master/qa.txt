@@ -1,0 +1,25 @@
+ExampleIG : Validation Results
+=========================================
+
+err = 1, warn = 4, info = 7
+IG Publisher Version: 1.6.20
+Generated Tue Aug 27 21:09:40 UTC 2024. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/my-ig)
+ Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-bundle-minimal : 1 / 0 / 23
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-bundle-minimal.json ==
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/bundle-minimal: Bundle: Slice 'Bundle.entry:composition': a matching slice is required, but not found (from http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips|2.0.0-ballot). Note that other slices are allowed in addition to this required slice
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[2].resource.qualification[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[2].resource/*Practitioner/45271f7f-63ab-4946-970f-3daaaa06637f*/.qualification[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[1].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[2].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[1]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[2]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
