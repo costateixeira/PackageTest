@@ -3,6 +3,7 @@ InstanceOf: Bundle
 Title: "IPS Bundle example - minimal"
 Description: "IPS Bundle example - minimal"
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
 * language = #en-US
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "28b95815-76ce-457b-b7ae-a972e527db40"
